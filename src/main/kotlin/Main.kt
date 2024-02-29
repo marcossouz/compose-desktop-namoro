@@ -43,7 +43,7 @@ fun App() {
         Box(
             modifier = Modifier.fillMaxSize()
             .background(Color(.95f, .95f, .95f))) {
-            Text("Quer namorar comigo?",
+            Text("wants to date me?",
                 modifier = Modifier.align(Alignment.Center)
                     .offset(y = (-50).dp)
             )
@@ -54,7 +54,7 @@ fun App() {
                 .align(Alignment.Center)
                 .offset(x = (-50).dp)
             ) {
-                Text("Sim")
+                Text("Yes")
             }
 
 
@@ -72,11 +72,11 @@ fun App() {
                     buttonPos = IntOffset(x, y)
                 }
             ) {
-                Text("Não")
+                Text("No")
             }
 
             if (answerYes) {
-                Text("Eu sabia que você não ia resistir!", modifier = Modifier.align(Alignment.Center).offset(y = (50).dp))
+                Text("I knew you wouldn't resist!", modifier = Modifier.align(Alignment.Center).offset(y = (50).dp))
             }
         }
     }
@@ -85,7 +85,7 @@ fun App() {
 fun main() = application {
     Window(onCloseRequest = ::exitApplication,
         resizable = false,
-        title = "Lucrar ou Lucrar",
+        title = "wants to date me?",
         state = rememberWindowState(size = DpSize(WIDTH.dp, HEIGHT.dp))) {
         App()
     }
